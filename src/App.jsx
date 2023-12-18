@@ -1,18 +1,25 @@
-import Home from './pages/Home'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Login from './pages/Login';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+
+import { Home } from './pages/home'
+import { Login } from './pages/login'
+import { Feed } from "./pages/feed"
+import { Register } from "./pages/register"
 
 function App() {
   return (
-    <>
-      <Router>
-        <Routes>
-          <Route exact path="/" element={<Home/>} />
-          <Route exact path="/login" element={<Login/>} />
-        </Routes>
-      </Router>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home/>}></Route>
+        <Route path="/login" element={<Login/>}></Route>
+        <Route path="/Feed" element={<Feed/>}></Route>
+        <Route path="/register" element={<Register/>}></Route>
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
