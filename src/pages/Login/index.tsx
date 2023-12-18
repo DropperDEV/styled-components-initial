@@ -12,7 +12,7 @@ import {
   TitleLogin,
   Wrapper,
 } from "./styles";
-import { Input } from "./../../components/Input/index";
+import { Input } from "../../components/Input/index";
 import { useNavigate } from "react-router";
 
 const Login = () => {

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { IUserInfoImage, IUserInfoProgress } from './types';
 
 export const Container = styled.div`
     display:flex;
@@ -6,7 +7,7 @@ export const Container = styled.div`
     margin-bottom: 24px;
 ` 
 
-export const UserPicture = styled.img`
+export const UserPicture = styled.img<IUserInfoImage>`
     width: 32px;
     height: 32px;
     border-radius: 22px;
@@ -23,7 +24,7 @@ export const NameText = styled.div`
     color: #FFFFFF;
 ` 
 
-export const Progress = styled.div`
+export const Progress = styled.div<IUserInfoProgress>`
     width: 180px;
     height: 6px;
     background-color: #FFFFFF;

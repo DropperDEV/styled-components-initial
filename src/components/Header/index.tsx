@@ -1,18 +1,17 @@
 import { useNavigate } from "react-router";
-import Button from "./../Button/index";
+import Button from "../Button/index";
 import {
   Container,
   Row,
-  Column,
   Wrapper,
   BuscarInputContainer,
   Menu,
   MenuRight,
-  UserPicture,
   Input,
 } from "./styles";
+import { IHeader } from "./types";
 
-export const Header = ({autenticado}) => {
+export const Header = ({autenticado}: IHeader) => {
 
   const register = useNavigate();
 
@@ -44,8 +43,8 @@ export const Header = ({autenticado}) => {
         </Row>
         <Row>
           <MenuRight href="#">Home</MenuRight>
-          <Button title={"Entrar"} onClick={handleClickLogin} />
-          <Button title={"Cadastrar"} onClick={handleClickRegister} />
+          <Button title="Entrar" onClick={handleClickLogin} />
+          <Button title="Cadastrar" onClick={handleClickRegister} />
         </Row>
       </Container>
     </Wrapper>
