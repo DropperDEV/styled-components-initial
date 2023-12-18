@@ -13,8 +13,17 @@ import {
   Wrapper,
 } from "./styles";
 import { Input } from "./../../components/Input/index";
+import { useNavigate } from "react-router";
 
 const Login = () => {
+
+  
+  const navigate = useNavigate();
+
+  const handleClickLogin = () => {
+      navigate('/feed')
+  }
+
   return (
     <>
       <Header />
@@ -27,7 +36,7 @@ const Login = () => {
         </Column>
         <Column>
           <Wrapper>
-            <TitleLogin>Faça seu cadastro</TitleLogin>
+            <TitleLogin>Faça o login</TitleLogin>
             <SubtitleLogin>Faça seu login e make the cange._</SubtitleLogin>
             <form>
               <Input placeholder="E-mail" type="email" leftIcon={<MdEmail />} />{" "}
@@ -36,7 +45,7 @@ const Login = () => {
                 type="password"
                 leftIcon={<MdLock />}
               />{" "}
-              <Button title={"Entrar"} variant="secondary" />
+              <Button title={"Entrar"} variant="secondary" onClick={handleClickLogin} />
             </form>
             <Row>
               <ForgetText>Esqueci minha senha</ForgetText>
