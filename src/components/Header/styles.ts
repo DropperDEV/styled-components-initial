@@ -14,6 +14,7 @@ export const Row = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 1rem;
 `;
 
 export const Column = styled.div`
@@ -29,6 +30,8 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0.6rem;
+
 `;
 
 export const BuscarInputContainer = styled.div`

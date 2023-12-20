@@ -16,6 +16,9 @@ export const Wrapper = styled.div`
 
 export const Column = styled.div`
   flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const Row = styled.div`

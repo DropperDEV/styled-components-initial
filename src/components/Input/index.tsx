@@ -1,11 +1,11 @@
 import { IconContainer, InputContainer, InputText } from "./styles";
 import { IInput } from "./types";
 
-export const Input = ({ leftIcon, ...rest }: IInput) => {
+export const Input = ({ leftIcon, placeholder,...rest}: IInput) => {
   return (
     <InputContainer>
       {leftIcon ? <IconContainer>{leftIcon}</IconContainer> : null}
-      <InputText />
+      <InputText placeholder={placeholder}/>
     </InputContainer>
   );
 };

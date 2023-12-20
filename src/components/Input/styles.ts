@@ -8,16 +8,20 @@ export const InputContainer = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  color: #fff;
 `;
 
 export const IconContainer = styled.div`
   margin-right: 10px;
+  color: #fff;
+
 `;
 
 export const InputText = styled.input`
   background-color: transparent;
-  color: #ffffff;
+  color: #fff;
   border: 0;
   height: 30px;
   width: 100%;
+  color: #ffffff;
 `;
