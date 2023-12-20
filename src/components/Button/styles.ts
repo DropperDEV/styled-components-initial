@@ -6,7 +6,6 @@ export const ButtonContainer = styled.button<IButtonStylezed>`
   border-radius: 22px;
   position: relative;
   border: 1px solid #565656;
-
   color: #ffffff;
   padding: 2px 12px;
   min-width: 120px;
@@ -15,8 +14,10 @@ export const ButtonContainer = styled.button<IButtonStylezed>`
   ${({ variant }) =>
     variant !== "primary" &&
     css`
-      min-width: 167px;
-      height: 33px;
+      width: 50%;
+      margin-left: 10%;
+
+    padding: 0.7rem 0.4rem;
       background: #e4105d;
 
       &:hover {
@@ -26,12 +27,13 @@ export const ButtonContainer = styled.button<IButtonStylezed>`
 
       &::after {
         content: "";
+        width: 100%;
         position: absolute;
         border: 1px solid #e4105d;
         top: -5px;
-        left: -6px;
-        width: calc(100% - 10px);
-        height: calc(100% + 10px);
+        left: -5px;
+        width: calc(100% + 6px);
+        height: calc(100% + 8px);
         border-radius: 22px;
       }
     `}
